@@ -1,0 +1,140 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddf2fd;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  background-color: #164863;
+  color: #ddf2fd;
+  padding: 20px;
+  margin-top: -5px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+header span {
+  font-size: 20px;
+  color: #9bbec8;
+}
+
+header h4 {
+  margin-top: 100px;
+  font-size: 19px;
+  color: #164863;
+}
+
+header p,
+.card p,
+.card-keliling p {
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+#luas,
+#keliling {
+  color: #ddf2fd;
+}
+
+button {
+  background-color: #3b90a7;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0 0 2px 2px #164863;
+  transition: all 0.2s;
+}
+
+button.luas,
+.keliling {
+  width: 400px;
+  border: 2px solid #fff;
+}
+
+button:hover {
+  transform: scale(1.025);
+  box-shadow: none;
+}
+
+.card,
+.card-keliling {
+  box-shadow: 0 1px 8px 1px #164863;
+  border-radius: 7px;
+  padding: 20px;
+  background-color: #addae7;
+  margin: 0 10px;
+}
+
+.card img,
+.card-keliling img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card h1,
+.card-keliling h1 {
+  background-color: #164863;
+  padding: 20px;
+  margin-top: -4px;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 1px #164863;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input {
+  margin-top: 7px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+#hitung,
+#hitungKel,
+#reset,
+#resetKel {
+  margin-left: 5px;
+  margin-top: -5px;
+  background-color: #3b90a7;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 376px) {
+  input {
+    width: 200px;
+  }
+  button {
+    width: 200px;
+  }
+  button::hover {
+    letter-spacing: normal;
+  }
+  button.luas,
+  .keliling {
+    width: 230px;
+  }
+  #hitung,
+  #hitungKel,
+  #reset,
+  #resetKel {
+    width: 80px;
+    padding: 10px 15px;
+  }
+}
